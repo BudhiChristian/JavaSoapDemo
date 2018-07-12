@@ -1,0 +1,34 @@
+package com.review.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.jws.WebService;
+
+import com.review.models.BeanieBaby;
+
+@WebService(endpointInterface="com.review.services.BeanieBabyService")
+public class BeanieBabyServiceImpl implements BeanieBabyService{
+
+	@Override
+	public List<BeanieBaby> getAllBeanieBabies() {
+		List<BeanieBaby> beanieBabies = new ArrayList<BeanieBaby>();
+		beanieBabies.add(new BeanieBaby(
+				40395,
+				"Whale",
+				"Anchor",
+				2006,
+				"Swimming through the waves and surf\r\n" + 
+				"The briny sea is my own turf\r\n" + 
+				"On the horizon I think I see\r\n" + 
+				"A brand new friend to swim with me !"));
+		return beanieBabies;
+	}
+
+	@Override
+	public BeanieBaby addBeanieBaby(BeanieBaby beanieBaby) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

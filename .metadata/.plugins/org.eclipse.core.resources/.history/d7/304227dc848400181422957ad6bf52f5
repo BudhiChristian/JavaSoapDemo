@@ -1,0 +1,24 @@
+package com.review.services;
+
+import java.util.List;
+
+import javax.jws.WebService;
+
+import com.review.models.BeanieBaby;
+
+@WebService(endpointInterface="com.review.services.BeanieBabyService")
+public class BeanieBabyServiceImpl implements BeanieBabyService{
+
+	@Override
+	public List<BeanieBaby> getAllBeanieBabies() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BeanieBaby addBeanieBaby(BeanieBaby beanieBaby) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

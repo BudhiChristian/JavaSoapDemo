@@ -1,0 +1,20 @@
+package com.review.main;
+
+import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
+
+import com.review.services.BeanieBabyService;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		String serviceUrl = "http://localhost:8080/SOAPExampleService/BeanieBabies";
+		
+		JaxWsProxyFactoryBean factory = new JaxWsProxyFactoryBean();
+		factory.setServiceClass(BeanieBabyService.class);
+		factory.setAddress(serviceUrl);
+		
+		
+
+	}
+
+}

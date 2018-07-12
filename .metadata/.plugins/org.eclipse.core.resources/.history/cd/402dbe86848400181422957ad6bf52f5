@@ -1,0 +1,8 @@
+package com.review.services;
+
+import javax.jws.WebService;
+
+@WebService(endpointInterface="com.review.services.BeanieBabyService")
+public class BeanieBabyServiceImpl {
+
+}

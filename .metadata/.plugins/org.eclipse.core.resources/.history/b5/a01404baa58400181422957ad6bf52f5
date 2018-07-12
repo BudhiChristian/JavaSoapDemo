@@ -1,0 +1,33 @@
+package com.review.main;
+
+import java.io.PrintWriter;
+
+import org.apache.cxf.interceptor.LoggingInInterceptor;
+import org.apache.cxf.interceptor.LoggingOutInterceptor;
+import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
+
+import com.review.services.BeanieBabyService;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		String serviceUrl = "http://localhost:8080/SOAPExampleService/BeanieBabies";
+		
+		JaxWsProxyFactoryBean factory = new JaxWsProxyFactoryBean();
+		factory.setServiceClass(BeanieBabyService.class);
+		factory.setAddress(serviceUrl);
+		
+		LoggingInInterceptor inInter = new LoggingInInterceptor();
+		LoggingOutInterceptor outInter = new LoggingOutInterceptor();
+		
+		factory.getInInterceptors().add(inInter);
+		factory.getOutInterceptors().add(outInter);
+		
+		inInter.setPrintWriter(new PrintWriter(System.out));
+		outInter.setPrintWriter(new PrintWriter(System.out));
+		
+		BeanieBabyService bbs = (BeanieBabyService) factory.create();
+
+	}
+
+}

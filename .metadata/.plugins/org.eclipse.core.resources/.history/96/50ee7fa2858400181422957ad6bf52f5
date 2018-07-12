@@ -1,0 +1,59 @@
+package com.review.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.jws.WebService;
+
+import com.review.models.BeanieBaby;
+
+@WebService(endpointInterface="com.review.services.BeanieBabyService")
+public class BeanieBabyServiceImpl implements BeanieBabyService{
+
+	@Override
+	public List<BeanieBaby> getAllBeanieBabies() {
+		List<BeanieBaby> beanieBabies = new ArrayList<BeanieBaby>();
+		beanieBabies.add(new BeanieBaby(
+				40395,
+				"Whale",
+				"Anchor",
+				2006,
+				"Swimming through the waves and surf\r\n" + 
+				"The briny sea is my own turf\r\n" + 
+				"On the horizon I think I see\r\n" + 
+				"A brand new friend to swim with me!"));
+		beanieBabies.add(new BeanieBaby(
+				47015,
+				"Bear",
+				"Flurry",
+				2005,
+				"When snow flurries fall during the day\r\n" + 
+				"It's time to go outside and play\r\n" + 
+				"Grab your scarf so we don't get chilly\r\n" + 
+				"Let's go sledding and act real silly!"));
+		beanieBabies.add(new BeanieBaby(
+				40807,
+				"Monkey",
+				"Mischief",
+				2009,
+				"Swinging along from tree to tree\r\n" + 
+				"I'm searching for the one for me\r\n" + 
+				"I have a big heart that I want to share\r\n" + 
+				"I may look like trouble but I truly care!"));
+		beanieBabies.add(new BeanieBaby(
+				42130,
+				"Cat",
+				"Pearl",
+				2015,
+				"I like to chase and catch a mouse\r\n" + 
+				"I am so fast just watch me pounce!"));
+		return beanieBabies;
+	}
+
+	@Override
+	public BeanieBaby addBeanieBaby(BeanieBaby beanieBaby) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

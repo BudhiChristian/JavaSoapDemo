@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.review.models.BeanieBaby"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.review.exceptions.NoPoemException"/>
+<fullyQualifiedTypeName name="org.apache.cxf.jaxws.JaxWsProxyFactoryBean"/>
+<fullyQualifiedTypeName name="com.review.services.BeanieBabyService"/>
+<fullyQualifiedTypeName name="org.apache.cxf.interceptor.LoggingInInterceptor"/>
+<fullyQualifiedTypeName name="org.apache.cxf.interceptor.LoggingOutInterceptor"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+</qualifiedTypeNameHistroy>

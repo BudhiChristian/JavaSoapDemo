@@ -1,0 +1,10 @@
+package com.review.services;
+
+import java.util.List;
+
+import com.review.models.BeanieBaby;
+
+public interface BeanieBabyService {
+	public List<BeanieBaby> getAllBeanieBabies();
+	public String addBeanieBaby(BeanieBaby beanieBaby);
+}

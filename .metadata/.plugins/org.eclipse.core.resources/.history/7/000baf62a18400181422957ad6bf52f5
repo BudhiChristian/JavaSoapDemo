@@ -1,0 +1,5 @@
+package com.review.exceptions;
+
+public class NoPoemException {
+
+}

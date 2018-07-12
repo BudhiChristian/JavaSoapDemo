@@ -1,0 +1,9 @@
+package com.review.models;
+
+public class BeanieBaby {
+	private int styleNumber;
+	private string animal;
+	private string name;
+	private int year;
+	private string poem;
+}

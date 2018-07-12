@@ -1,0 +1,18 @@
+package com.review.main;
+
+import java.util.List;
+
+import com.review.services.*;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		BeanieBabyService bbs = new BeanieBabyServiceImplService().getBeanieBabyServiceImplPort();
+		
+		List<BeanieBaby> beanieBabies = bbs.getAllBeanieBabies();
+		for(BeanieBaby b : beanieBabies) {
+			System.out.println(b.getName());
+		}
+	}
+
+}
